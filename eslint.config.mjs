@@ -1,7 +1,7 @@
-import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
-import { defineConfig } from "eslint/config";
+// import js from "@eslint/js";
+// import globals from "globals";
+// import tseslint from "typescript-eslint";
+// import { defineConfig } from "eslint/config";
 
 
 //export default defineConfig([
@@ -13,7 +13,7 @@ import { defineConfig } from "eslint/config";
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
-
+import tsdoc from "eslint-plugin-tsdoc"
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -21,8 +21,21 @@ export default [
   {languageOptions: { globals: globals.node }},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  {ignores: [
-    "dist/*"
-  ]    
+  {
+    plugins: { tsdoc }
+  },
+  {
+    rules: {
+      "prefeer-const": "off",
+      "tsdoc/syntax": "warn",
+      "no-unused-vars": "warn"
+    }
+  },
+  {
+    ignores: [
+      "eslint.config.mjs",
+      "docs/*",
+      "dist/*"
+    ]    
   }
 ];
