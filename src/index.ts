@@ -1,4 +1,4 @@
-import { suma } from './funciones';
+import { suma, resta } from './funciones';
 
 const resultado = suma(2, 3);
 console.log(`Resultado: ${resultado}`);
