@@ -6,12 +6,17 @@
     "globals": "^16.0.0",
     "tsc-watch": "^6.2.1",
     "typedoc": "^0.28.3",
-    "typescript-eslint": "^8.31.1"
+    "typescript-eslint": "^8.31.1",
+    "vitest": "^3.1.2"
   },
   "name": "prct05-objects-classes-interfaces-javieryanes",
   "version": "1.0.0",
   "description": "Práctica 5: objetos, clases e interfaces Clase sobre los pokemons",
   "main": "index.js",
+  "scripts": {
+    "doc": "typedoc",
+    "test": "vitest run"
+  },
   "dependencies": {
     "ajv": "^8.12.0",
     "argparse": "^2.0.1",
