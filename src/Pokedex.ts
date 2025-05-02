@@ -1,13 +1,15 @@
 import { Pokemon, PokemonType, Stats } from "./Pokemon"
 
 export class Pokedex {
+
     private pokemons: Pokemon[] = [];
 
     // Métodos
-    getPokemons(): Pokemon[] { return this.pokemons };
+    getPokemons(): Pokemon[] { return this.pokemons }
     length(): number { return this.pokemons.length }
 
     // añadir un pokemon
+
     /**
      * Añadir un pokemon al conjunto
      * @param poke1 - Pokemon que se añade
@@ -15,6 +17,7 @@ export class Pokedex {
     addPokemon(poke1: Pokemon): void {
         this.pokemons.push(poke1);
     }
+
     /**
      * Buscar pokemons por altura
      * @param min - Estatura mínima que puede tener
