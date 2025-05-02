@@ -39,6 +39,10 @@ export class Pokemon {
     getStats(): Stats { return this.stats;}
 
     // Método para mostrar la información del Pokémon
+    /**
+     * Función para transformar el objeto en una string
+     * @returns Cadena con todos los atributos del objeto
+     */
     toString(): string {
       return `Name: ${this.getName()}, Type: ${this.getType()}, Weight: ${this.getWeight()}kg, Height: ${this.getHeight()}m, 
 Stats: "Attack": ${this.getStats().attack}, "Defense": ${this.getStats().defense}, "Speed": ${this.getStats().speed}, "HP": ${this.getStats().hp}`;
