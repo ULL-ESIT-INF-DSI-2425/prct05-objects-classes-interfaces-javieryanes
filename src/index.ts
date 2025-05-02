@@ -1,3 +1,10 @@
+/**
+ * Este es el fichero principal del proyecto donde se hace uso de todas las clases
+ * Sirve como ejemplo de uso de la aplicación de Pokemons
+ * 
+ * @packageDocumentation
+ */
+
 import { Pokemon, PokemonType, Stats } from "./Pokemon"
 import { Pokedex } from "./Pokedex"
 
