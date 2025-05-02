@@ -14,6 +14,7 @@
   "description": "Práctica 5: objetos, clases e interfaces Clase sobre los pokemons",
   "main": "index.js",
   "scripts": {
+    "start": "tsc && node dist/index.js",
     "doc": "typedoc",
     "test": "vitest run"
   },
@@ -44,9 +45,6 @@
     "uc.micro": "^2.1.0",
     "uri-js": "^4.4.1",
     "yaml": "^2.7.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
